@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" 
+            rel="stylesheet">
+    <!--Font icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>E-Commerce Project</title>
+    <link rel="stylesheet" href="./style.css" >
+</head>
+<body>
+   <!-- nav section starts here -->
+   <i class="fas fa-bars fa-2x " id="menu_list"></i>
+   <nav id="menu" class="hidden">
+       <ul class="nav-upper flex-space-around">
+           <li class="nav__list">
+               <a href="index.html"
+                   class="nav__link">Home</a>
+           </li>
+           <li class="nav__list">
+               <a href="register.html" 
+                    class="nav__link">Register</a>
+           </li>
+           <li class="nav__list">
+               <a href="login.html" 
+                   class="nav__link">Login</a>
+           </li>
+           <li class="nav__list">
+               <a href="index.html" 
+                   class="nav__link">Log Out</a>
+           </li>
+           <li class="nav__list">
+               <a href="contact.html" 
+                    class="nav__link">Contact</a>
+           </li>
+           <li class="nav__list">
+               <a href="login.html" 
+                   class="nav__link">
+                   <img src="./images/profile1.JPG" class="profile-icon" alt="Profile picture">
+               </a>
+           </li>
+       </ul>
+       <ul class="nav-lower flex-space-around">
+           <li class="nav__list">
+               <a href="contact.html" 
+                    class="nav__link nav__brand">Indian Express</a>
+           </li>
+           <li class="nav__list">
+               <a href="cart.html" class="nav__link">
+                 <span><i class="fa-solid fa-cart-shopping"></i> </span>
+                 Cart 2 products - $216.31
+               </a>
+             </li>
+       </ul>
+   </nav>
+   <!-- nav section ends here -->  
+
+    <!-- Main Section starts here -->
+    <main>
+        <section class="contact-section">
+            <h2 class="section-title flex-center">Contact Us</h2>
+            <div class="contact-container flex-center">
+                <form action="" class="form card">
+                    <div class="form-control flex-center">
+                        <label for="name">Name</label>
+                        <input type="text" class="name" id="name"required autocomplete="name">
+                    </div>
+                    <div class="form-control flex-center">
+                        <label for="email">Email</label>
+                        <input type="text" class="email" id="email" required autocomplete="email">
+                    </div>
+                    <div class="form-control flex-center">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <div class="form-control flex-center form-btn-field">
+                        <button type="submit" class="btn contact-btn">submit</button>
+                      </div>
+                </form>
+                <div class="contact-address flex-space-around">
+                    <address>
+                        <h4>Address:</h4>
+                        <p>abcdef 3 45</p>
+                        <p>123400, defg, universe</p>
+                    </address>
+                    <span>Call: 
+                    <a href="tel: +1234567890">+1234567890</a></span>
+                    <iframe class="contact__map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+                    1d8952.061197819698!2d11.65826123387169!3d55.87974922573426!2m3!1
+                    f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46527636a890929f%3
+                    A0x501e6c7b2181b9f5!2s4500%20Strandhuse!5e0!3m2!1sen!2sdk!4v167968
+                    0641424!5m2!1sen!2sdk" style="border:0;" 
+                    allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <!-- Main Section ends here -->
+
+    <!-- Footer section starts here -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+          <label for="subscribe">Subscribe to Newsletter: </label>
+          <input
+            type="email"
+            id="subscribe"
+            name="subscribe"
+            class="footer__input"
+            placeholder="Your Email Address"
+          />
+          <button class="btn btn-subscribe">subscribe</button>
+        </div>
+          <div>
+            <p>&copy; Copyright 2023 Mani Express. All rights rserved</p>
+          </div>
+        </footer>
+    <!-- Footer section ends here -->
+    <script src="./index.js"></script>
+</body>
+</html>

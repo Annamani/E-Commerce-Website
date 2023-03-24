@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="this is an ecommerce project for making anis express"
+    />
+    <title>Ecommerce project</title>
+
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar starts here  -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+      <ul class="nav-upper flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__list">
+          <a href="register.html" class="nav__link">Register</a>
+        </li>
+        <li class="nav__list">
+          <a href="login.html" class="nav__link">Login</a>
+        </li>
+        <li class="nav__list">
+          <a href="/index.html" class="nav__link">Logout</a>
+        </li>
+        <li class="nav__list">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link">
+            <img
+              class="profile-icon"
+              src="./images/profile1.png"
+              alt="profile icon"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <ul class="nav-lower flex-space-around">
+        <li class="nav__list">
+          <a href="/index.html" class="nav__brand nav__link">Anis Express</a>
+        </li>
+        <li class="nav__list">
+          <a href="/cart.html" class="nav__link">
+            <span><i class="fa-solid fa-cart-shopping"></i> </span>
+            Cart 2 products - $124.40
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Section starts here -->
+    <main class="flex-center">
+        <div class="main-content">
+            <section class="product-details flex-center">
+                <div class="product-details__left flex-center">
+                    <img src="./images/product1.jpg" alt="product1 image" class="product-details__img">
+                </div>
+                <div class="product-details__right">
+                    <h3 class="product__name">Sony v-4 Headphone</h3>
+                    <p>
+                        <span class="dot green"></span>
+                        <span class="dot red"></span>
+                        <span class="dot black"></span>
+                    </p>
+                    <p class="product__description">
+                        <strong>Description : </strong>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Voluptatum deserunt obcaecati deleniti veritatis earum velit, 
+                        qui aperiam quos quaerat eveniet iure laborum ab, 
+                        aut at sapiente pariatur iusto dolor laboriosam inventore 
+                        molestias libero optio! Nesciunt necessitatibus eveniet ex  
+                        harum! Dolorem corporis commodi quo natus, beatae eaque maiores, 
+                        sit minus et placeat porro voluptatibus exercitationem ut! 
+                        Omnis optio, rem consequuntur dicta totam cum. Optio voluptatem 
+                        tempora quia esse facilis reiciendis possimus facere praesentium
+                        quod, hic odio dolor eaque beatae laudantium a voluptas repellat
+                        impedit tempore nulla deserunt voluptatum deleniti eum voluptatibus? Sed error quasi, labore vero corporis tempore? Cum, optio quam?
+                    </p>
+                    <br/>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Tempore eos quod doloremque magnam minus et vel recusandae eveniet fugit, 
+                        error placeat, laborum voluptate vitae beatae blanditiis est sunt.
+                         Amet dicta autem numquam voluptatem facere. Hic itaque ad nemo dicta ea?</p>
+
+                    <h4 class="product__category">Category : Headphone</h4>
+                    <h4 class="product__price">Price : $213.56</h4>
+                    <p class="product__rating"><strong>Rating </strong>: 4.5/5</p>
+                    <button class="btn product__button">Add To Cart</button>
+                    <button class="btn product__button">Back To Shopping</button>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+    <!-- Main Section ends here -->
+
+    <!-- Footer section starts here -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+          <label for="subscribe">Subscribe to Newsletter: </label>
+          <input
+            type="email"
+            id="subscribe"
+            name="subscribe"
+            class="footer__input"
+            placeholder="Your Email Address"
+          />
+          <button class="btn btn-subscribe">subscribe</button>
+        </div>
+          <div>
+            <p>&copy; Copyright 2023 Mani Express. All rights rserved</p>
+          </div>
+        </footer>
+    <!-- Footer section ends here -->
+    <script src="./index.js"></script>
+</body>
+</html>
